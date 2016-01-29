@@ -1,0 +1,105 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :team %><br>
+    <%= f.text_field :team %>
+  </div>
+  <div class="field">
+    <%= f.label :games_played %><br>
+    <%= f.number_field :games_played %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br>
+    <%= f.number_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :losses %><br>
+    <%= f.number_field :losses %>
+  </div>
+  <div class="field">
+    <%= f.label :minutes %><br>
+    <%= f.text_field :minutes %>
+  </div>
+  <div class="field">
+    <%= f.label :points %><br>
+    <%= f.text_field :points %>
+  </div>
+  <div class="field">
+    <%= f.label :touches %><br>
+    <%= f.text_field :touches %>
+  </div>
+  <div class="field">
+    <%= f.label :time_of_possession %><br>
+    <%= f.text_field :time_of_possession %>
+  </div>
+  <div class="field">
+    <%= f.label :seconds_per_touch %><br>
+    <%= f.text_field :seconds_per_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :dribbles_per_touch %><br>
+    <%= f.text_field :dribbles_per_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :points_per_touch %><br>
+    <%= f.text_field :points_per_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :frontcourt_touches %><br>
+    <%= f.text_field :frontcourt_touches %>
+  </div>
+  <div class="field">
+    <%= f.label :elbow_touches %><br>
+    <%= f.text_field :elbow_touches %>
+  </div>
+  <div class="field">
+    <%= f.label :post_touches %><br>
+    <%= f.text_field :post_touches %>
+  </div>
+  <div class="field">
+    <%= f.label :paint_touches %><br>
+    <%= f.text_field :paint_touches %>
+  </div>
+  <div class="field">
+    <%= f.label :points_per_elbow_touch %><br>
+    <%= f.text_field :points_per_elbow_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :points_per_post_touch %><br>
+    <%= f.text_field :points_per_post_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :points_per_paint_touch %><br>
+    <%= f.text_field :points_per_paint_touch %>
+  </div>
+  <div class="field">
+    <%= f.label :points_per_fc_touch %><br>
+    <%= f.text_field :points_per_fc_touch %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

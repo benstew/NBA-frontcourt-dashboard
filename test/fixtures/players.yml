@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  team: MyString
+  games_played: 1
+  wins: 1
+  losses: 1
+  minutes: 1.5
+  points: 1.5
+  touches: 1.5
+  time_of_possession: 1.5
+  seconds_per_touch: 1.5
+  dribbles_per_touch: 1.5
+  points_per_touch: 1.5
+  position: MyString
+  frontcourt_touches: 1.5
+  elbow_touches: 1.5
+  post_touches: 1.5
+  paint_touches: 1.5
+  points_per_elbow_touch: 1.5
+  points_per_post_touch: 1.5
+  points_per_paint_touch: 1.5
+  points_per_fc_touch: 1.5
+
+two:
+  id: 1
+  name: MyString
+  team: MyString
+  games_played: 1
+  wins: 1
+  losses: 1
+  minutes: 1.5
+  points: 1.5
+  touches: 1.5
+  time_of_possession: 1.5
+  seconds_per_touch: 1.5
+  dribbles_per_touch: 1.5
+  points_per_touch: 1.5
+  position: MyString
+  frontcourt_touches: 1.5
+  elbow_touches: 1.5
+  post_touches: 1.5
+  paint_touches: 1.5
+  points_per_elbow_touch: 1.5
+  points_per_post_touch: 1.5
+  points_per_paint_touch: 1.5
+  points_per_fc_touch: 1.5
