@@ -15,7 +15,7 @@
         SportVU is a camera system that is hung from the rafters of every NBA arena. This
         system has the ability to collect a tremendous amount of data with a focus on
         real-time player and ball tracking. A majority of the below data has been scraped off the NBA's website
-        and we are levaraging it to compare a player's per game average to the NBA league average. Insights
+        and we are levaraging it to compare a player's per game average to the NBA league average. Insight
         can then be drawn about a specific player's strengths and weaknesses.
       </p>
     </div>
@@ -34,13 +34,13 @@
           <td>Points</td>
           <td><%= @player.points %></td>
           <td><%= Player.average_points %></td>
-          <td><%= @player.points - Player.average_points %></td>
+          <td><%= (@player.points - Player.average_points).round(2) %></td>
         </tr>
         <tr>
           <td>Time Played (min)</td>
           <td><%= @player.minutes %></td>
           <td><%= Player.average_minutes %></td>
-          <td><%= @player.minutes - Player.average_minutes %></td>
+          <td><%= (@player.minutes - Player.average_minutes).round(2) %></td>
         </tr>
         <tr>
           <td>Time of Possession (min)</td>
@@ -57,7 +57,7 @@
         <td>Dribbles per Touch</td>
           <td><%= @player.dribbles_per_touch %></td>
           <td><%= Player.average_dribbles_per_touch %></td>
-          <td><%= @player.dribbles_per_touch - Player.average_dribbles_per_touch%></td>
+          <td><%= (@player.dribbles_per_touch - Player.average_dribbles_per_touch).round(2)%></td>
         </tr>
         <td>Points per Touch</td>
           <td><%= @player.points_per_touch %></td>
@@ -124,19 +124,19 @@
           <td>Elbow Touch</td>
           <td><%= @player.points_per_elbow_touch %></td>
           <td><%= Player.average_points_per_elbow_touch %></td>
-          <td><%= @player.points_per_elbow_touch - Player.average_points_per_elbow_touch %></td>
+          <td><%= (@player.points_per_elbow_touch - Player.average_points_per_elbow_touch).round(3) %></td>
         </tr>
         <tr>
           <td>Post Touch</td>
           <td><%= @player.points_per_post_touch %></td>
           <td><%= Player.average_points_per_post_touch%></td>
-          <td><%= @player.points_per_post_touch - Player.average_points_per_post_touch %></td>
+          <td><%= (@player.points_per_post_touch - Player.average_points_per_post_touch).round(3) %></td>
         </tr>
         <tr>
           <td>Paint Touch</td>
           <td><%= @player.points_per_paint_touch  %></td>
           <td><%= Player.average_points_per_paint_touch%></td>
-          <td><%= @player.points_per_paint_touch - Player.average_points_per_paint_touch %></td>
+          <td><%= (@player.points_per_paint_touch - Player.average_points_per_paint_touch).round(3) %></td>
         </tr>
         <tr>
       </tbody>
